@@ -1,46 +1,26 @@
-// const main = document.querySelector('.main');
-// const but = document.querySelector('.but');
-// const display = document.querySelector('.display');
-// let String= "";
-// let prime= document.querySelectorAll('.prime');
-// Array.from(prime).forEach((prime) => {
-//     prime.addEventListener('click', (e) => {
+let num='';
+const prime=document.querySelectorAll(".prime");
+ const backspace=document.querySelector(".but");
 
-//         console.log(e.target)
-//         String= String+ e.target.innerHTML;
-//         document.querySelector('input').value=String;
-//     })
-    
-// })
-const main = document.querySelector('.main');
-// const backspace = document.querySelector('.icon');
-const display = document.querySelector('.display');
+const sendtext=()=>{
+    document.getElementById('text').innerText=num;
+}
 
-main.addEventListener('click', (e) => {
-  const target = e.target;
-  if (target.classList.contains('prime') && display.value.length < 10) {
-    display.value += target.textContent;
-  }else if (target.classList.contains('prime') && display.value.length >= 10) {
-    alert("Maximum 10 digits allowed");
-  }
+prime.forEach(iss=>{
+    iss.addEventListener("click",()=>{
+        if(num.length>=10){
+            alert("Max digits reached");
+        }else{
+            num+=iss.innerText;
+            sendtext();
+        }
+    });
 });
-
-// main.addEventListener("click", (e) => {
-//     //console.log("click circle");
-//   const target = e.target;
-//   if (target.classList.contains('prime') && display.value.length < 10) {
-//     display.value += target.textContent;
-//   }else if (target.classList.contains('prime') && display.value.length >= 10) {
-//     alert("Maximum 10 digits allowed");
-//   }
-// });
-
-
-// but.addEventListener('click', () => {
-//     if (display.value.length > 0) {
-//       const text = display.value;
-//       display.value = text.substring(0, text.length - 1);
-//     } else {
-//       alert("No digits left");
-//     }
-//   });
+backspace.addEventListener("click",()=>{
+    num=num.slice(0,num.length-1);
+    if(num.length<=0){
+        document.getElementById('text').innerText='...';
+        setTimeout(()=>{alert("Nothing to erase");},100);
+    }
+    else{sendtext();}
+});

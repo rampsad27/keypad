@@ -7,7 +7,7 @@
 
 .main{
     position:absolute;
-    width: 29vw;
+    width: 24vw;
 	background:#eee;
     
     background-color: rgb(142, 165, 125);
@@ -26,31 +26,44 @@
 	width:7vw;
 	height:5vw;
 	line-height:5vw;
-	margin:3%;
+	margin:1%;
 	font-size:2vw;
 	background-color: rgb(200, 184, 179); 
     border: 2px solid black ; 
-    border-radius: 9px;
+    border-radius: 2px;
 	
     
     
 }
+.display{
+    position: relative;
+    background-color: darkgray;
+    width: 285px;
+    height: 80px;
+    left: 10%;
+    top: 3px;
+    font-size: 30px;
+     letter-spacing: 0.2em;
+     border: 2px solid rgb(72, 71, 71) ; 
+    border-radius: 2px;
 
- .display{
+}
+
+ /* .display{
     position: relative;
    
     display: inline;
     width: 285px;
     height: 80px;
     left: 21%;
-    top: 10px;
+    top: 8px;
     
     text-align: right;
     letter-spacing: 0.2em;
-    font-size: 40px;
+    font-size: 30px;
     
-    background-color:black;
-} 
+    background-color:rgb(255, 255, 255);
+}  */
 
 .but
 {
@@ -58,12 +71,12 @@
     text-align: center;
     width: 40px;
     height: 40px;
-    top: 30px;
+    top: 49px;
     left: 86%;
     
 }
 .up{
     width:7vw;
-	height:8vw;
-    display: flex;
+	height:7vw;
+    /* display: flex; */
 }
