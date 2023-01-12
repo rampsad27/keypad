@@ -1,69 +1,69 @@
+/* .body{
+    background: #dbd4d4;   
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+} */
+
 .main{
-    height:375px;
-    width: 350px;
+    position:absolute;
+    width: 29vw;
+	background:#eee;
+    
+    background-color: rgb(142, 165, 125);
+    /* display: flex; */
+    /*flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 50px auto;
+     */
+    
+}
+
+.prime{
+
+    display:inline-block;
+	text-align:center;
+	width:7vw;
+	height:5vw;
+	line-height:5vw;
+	margin:3%;
+	font-size:2vw;
+	background-color: rgb(200, 184, 179); 
+    border: 2px solid black ; 
+    border-radius: 9px;
+	
+    
+    
+}
+
+ .display{
+    position: relative;
    
-}
-.but{
-    height:30px;
-    width:50px;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    float:right;
-}
-  
+    display: inline;
+    width: 285px;
+    height: 80px;
+    left: 21%;
+    top: 10px;
+    
+    text-align: right;
+    letter-spacing: 0.2em;
+    font-size: 40px;
+    
+    background-color:black;
+} 
 
-/* .prime1, prime2, prime3, prime4, prime5, prime6, prime7, prime8,prime*,prime0,prime#{ */
-    .prime{
-    height:50px;
-    width:200px;
-   padding: 5px;
-   border: 5px solid #969696;
-    /* background-color: aquamarine;  */
-     display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.prime1, .prime2 , .prime3{
-    height:50px;
-    width:200px;
-   padding: 5px;
-   border: 5px solid #969696;
-    /* background-color: aquamarine;  */
-     display: flex;
-    align-items: center;
-    justify-content: center;
-
+.but
+{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    left: 86%;
+    
 }
 .up{
-    height:100px;
-    width:350px;
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    background-color: #969696;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-   
-}
-    
-
-.first{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: brown; */
-    /* flex-direction: row; */
-    /* margin:10px; */
-    /* background-color: aquamarine; */
-}
-
-.display{
- height:80px;
-    width:300px;
-    margin-left: 10px;
-    background: transparent;
+    width:7vw;
+	height:8vw;
+    display: flex;
 }
